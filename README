@@ -1,0 +1,20 @@
+GNUradio core modification
+
+
+Follow next short HOW-TO for replace GNURadio-core Viterbi lib
+
+If you are interesting to use gr-fec packakage containing Viterbi decoders for HRPT weather satellite telemetry decoding 
+then you will need to modify and reinstall gnuradio-core with new viterbi.c, viterbi.h sources.
+
+1)	cd to  gnuradio/gnuradio-core
+
+2)	$$ make uninstall
+
+3)  create a backup for  gnuradio/gnuradio-core/src/lib/viterbi
+
+4)  new sources viterbi.c and viterbi.h need to be replaced in gnuradio/gnuradio-core/src/lib/viterbi
+
+5)  $$ make
+	$$ make install
+	
+	
